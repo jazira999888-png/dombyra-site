@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Домбыра</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #1e40af;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Домбыра</h1>
+
+  <p>
+    Домбыра — қазақ халқының ең көне және кең тараған екі шекті ішекті музыкалық аспабы.
+    Ол қазақ мәдениетінде ерекше орын алады. Домбыраның көмегімен күйлер шертіліп, әндер сүйемелденеді.
+  </p>
+
+  <!-- Фото (GitHub-тағы файлды қолданамыз) -->
+  <img src="dombyra.png" alt="Домбыра суреті">
+
+  <!-- ҮНІ батырмасы -->
+  <div>
+    <button onclick="playDombyra()">▶ ҮНІ</button>
+  </div>
+
+  <!-- Аудио (GitHub-тағы файл) -->
+  <audio id="dombyraSound" src="Dombyra uni (mp3cut.net).mp3"></audio>
+
+  <script>
+    function playDombyra() {
+      const sound = document.getElementById('dombyraSound');
+      sound.currentTime = 0;
+      sound.play();
+    }
+  </script>
+
+</body>
+</html>
